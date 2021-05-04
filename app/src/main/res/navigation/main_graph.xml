@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.juegosparabeber.ui.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <activity
+        android:id="@+id/yonunca"
+        android:name="com.example.juegosparabeber.ui.yonunca.Yonunca"
+        android:label="activity_yo_nunca"
+        tools:layout="@layout/activity_yo_nunca" />
+    <activity
+        android:id="@+id/verdadOAtrevimiento"
+        android:name="com.example.juegosparabeber.ui.verdadoatrevimiento.VerdadOAtrevimiento"
+        android:label="activity_verdad_o_atrevimiento"
+        tools:layout="@layout/activity_verdad_o_atrevimiento" />
+    <fragment
+        android:id="@+id/versionFiesta"
+        android:name="com.example.juegosparabeber.ui.yonunca.VersionFiesta"
+        android:label="fragment_version_fiesta"
+        tools:layout="@layout/fragment_version_fiesta" />
+    <fragment
+        android:id="@+id/versionPicante"
+        android:name="com.example.juegosparabeber.ui.yonunca.VersionPicante"
+        android:label="fragment_version_picante"
+        tools:layout="@layout/fragment_version_picante" />
+    <fragment
+        android:id="@+id/versionTinderPeip"
+        android:name="com.example.juegosparabeber.ui.yonunca.VersionTinderPeip"
+        android:label="fragment_version_tinder_peip"
+        tools:layout="@layout/fragment_version_tinder_peip" />
+</navigation>
